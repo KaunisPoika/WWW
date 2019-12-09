@@ -1,1 +1,141 @@
-<h1>Joo<h/1>
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Some games by Kaunis Poika</title>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+</head>
+
+<header>
+ </header>
+
+<body>
+	<div class="col-12 col-s-12">
+		<h2>List of all games</h2>
+		<ul>
+			<li>FireFighter</li>
+			<li>Diplomacy strategy</li>
+			<li>Builder</li>
+			<li>Dungeon</li>
+		</ul>
+	</div>
+	<div class="col-12 col-s-12">
+		<table>
+			<tr>
+				<th class="col-4 col-s-4">Game</th>
+				<th class="col-4 col-s-4">Description</th>
+				<th class="col-4 col-s-4">Engine</th>
+			</tr>
+			<tr>
+				<td class="col-4 col-s-4">
+					FireFighter
+				</td>
+				<td class="col-4 col-s-4">
+					Side scroller fire fighting game.
+				</td>
+				<td class="col-4 col-s-4">
+					GameMaker
+				</td>
+			</tr>
+			<tr>
+				<td class="col-4 col-s-4">
+					Diplomacy strategy
+				</td>
+				<td class="col-4 col-s-4">
+					Turn based strategy with focus on diplomacy between players.
+				</td>
+				<td class="col-4 col-s-4">
+					Unity
+				</td>
+			</tr>
+			<tr>
+				<td class="col-4 col-s-4">
+					Builder
+				</td>
+				<td class="col-4 col-s-4">
+					First person sandbox vechicle building game.
+				</td>
+				<td class="col-4 col-s-4">
+					Unity
+				</td>
+			</tr>
+			<tr>
+				<td class="col-4 col-s-4">
+					Dungeon
+				</td>
+				<td class="col-4 col-s-4">
+					First person dungeon crawler.
+				</td>
+				<td class="col-4 col-s-4">
+					GameMaker
+				</td>
+			</tr>
+		</table>
+	</div>
+	<!--> Screenshots </!-->
+	<h2 class="col-12 col-s-12">Screenshots</h2>
+	<div>
+		<div class="col-6 col-s-6">
+			<img src="FireFighter.png"/>
+		</div>
+		<div class="col-6 col-s-6" >
+			<img src="RiskiScreen.png"/>
+		</div>
+	</div>
+	<div>
+		<div class="col-6 col-s-6">
+			<img src="Rakentelupeli.png"/>
+		</div>
+		<div class="col-6 col-s-6">
+			<img src="DungeonScreen.png"/>
+		</div>
+	</div>
+	<!--> Feedback </!-->
+	<h2 class="col-12 col-s-12">Give feedback</h2>
+	<form class="col-12 col-s-12" name="form" onsubmit="return validateForm()">
+		<div class="col-6 col-s-6">
+			<p>Name</p>
+			<input class="col-12 col-s-12" type="text" name="name"></input>
+		</div>
+		<div class="col-6 col-s-6">
+			<p>Age</p>
+			<input class="col-12 col-s-12" type="text" name="age"></input>
+		</div>
+		<div class="col-12 col-s-12">
+			<p>Feedback</p>
+			<textarea class="col-12 col-s-12" rows="10"></textarea>
+		</div>
+		<div class="col-12 col-s-12">
+			<input class="col-12 col-s-12" type="submit"></input>
+		</div>
+	</form>
+	
+	<!--> Drag n drop </!-->
+	<h2 class="col-12 col-s-12">Try my awesome to-do list!</h2>
+	<div class="col-6 col-s-6 todo" ondragover = "onDragOver(event);" ondrop="onDrop(event);">
+		<h3>To-do</h3>
+		<div class = "col-12 col-s-12 item" id="todo0" draggable = "true" ondragstart="onDragStart(event);">Read this site</div>
+		<div class = "col-12 col-s-12 item" id="todo1" draggable = "true" ondragstart="onDragStart(event);">Admire all the beautiful screenshots</div>
+		<div class = "col-12 col-s-12 item" id="todo2" draggable = "true" ondragstart="onDragStart(event);">Send feedback</div>
+		<div class = "col-12 col-s-12 item" id="todo3" draggable = "true" ondragstart="onDragStart(event);">Try to-do list</div>
+	</div>
+	<div class="col-6 col-s-6 done" ondragover = "onDragOver(event);" ondrop="onDrop(event);">
+		<h3>Done</h3>
+	</div>
+	
+	<!--> Map </!-->
+	<h2 class="col-12 col-s-12">My current location</h2>
+	<div class="col-12 col-s-12">
+		<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=27.690482139587406%2C64.21145604875508%2C27.72631645202637%2C64.21998709155787&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=16/64.2157/27.7084">View Larger Map</a></small>
+	</div>
+	
+	<!--> Video </!-->
+	<h2 class="col-12 col-s-12">Great video from internet</h2>
+	<div class="col-12 col-s-12">
+		<iframe width = "1024px" height = "768" src="https://www.youtube.com/embed/yorTG9at90g"></iframe>
+	</div>
+</body>
